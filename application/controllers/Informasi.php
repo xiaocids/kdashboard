@@ -13,7 +13,7 @@ class Informasi extends CI_Controller
     public function index()
     {
         header("Access-Control-Allow-Origin: *");
-        $title = 'Prosedur';
+        $title = 'Prosedur'.$this->config->item('base_url');
         $data = array(
             'title' =>$title
         );
