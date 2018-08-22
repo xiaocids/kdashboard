@@ -42,28 +42,38 @@
                         <h3 class="dark">Pertumbuhan Penduduk <small>Per 4 Tahun</small></h3>
                     </div>
 
-                    <div class="filter">
-                        <form class="form-horizontal form-label-left">
-                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                <label class="control-label col-md-2 col-sm-2 col-xs-12">Desa</label>
-                                <select id="heard" class="form-control" required>
-                                    <option value="">Semua</option>
-                                    <option value="press">Desa 1</option>
-                                    <option value="net">Desa 2</option>
-                                    <option value="mouth">Desa 3</option>
-                                </select>
+                    <div class="title_right">
+                        <form class="form-horizontal form-label-left input_mask" style="float: right;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Desa</label>
+                                    <div class="col-md-9 col-sm-9 col-xs-12">
+                                      <select class="form-control">
+                                        <option>Semua</option>
+                                        <option>Option one</option>
+                                        <option>Option two</option>
+                                        <option>Option three</option>
+                                        <option>Option four</option>
+                                      </select>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                <label class="control-label col-md-2 col-sm-2 col-xs-12">Tahun</label>
-                                <select id="heard" class="form-control" required>
-                                    <option value="">Semua</option>
-                                    <option value="press">2018</option>
-                                    <option value="press">2017</option>
-                                    <option value="press">2016</option>
-                                    <option value="press">2015</option>
-                                </select>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Tahun</label>
+                                    <div class="col-md-9 col-sm-9 col-xs-12">
+                                      <select class="form-control">
+                                        <option>Semua</option>
+                                        <option>2018</option>
+                                        <option>2017</option>
+                                        <option>2016</option>
+                                        <option>2015</option>
+                                      </select>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
                         </form>
                     </div>
                     <div class="clearfix"></div>

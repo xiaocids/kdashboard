@@ -21,33 +21,6 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		header("Access-Control-Allow-Origin: *");
-		$title = 'Home';
-		$data = array(
-			'title' =>$title
-		);
-		$this->template->set('title', $title);
-		$this->template->load('default_layout', 'contents' , 'content_templates/dashboard', $data);
-	}
-
-	public function kependudukan()
-	{
-		header("Access-Control-Allow-Origin: *");
-		$title = 'Kependudukan';
-		$data = array(
-				'title' =>$title
-		);
-		$this->template->set('title', $title);
-		$this->template->load('default_layout', 'contents' , 'content_templates/kependudukan', $data);
-	}
-
-	public function kesehatan()
-	{
-		header("Access-Control-Allow-Origin: *");
-		$title = 'Kesehatan';
-		$data = array(
-				'title' =>$title
-		);
-		$this->template->set('title', $title);
-		$this->template->load('default_layout', 'contents' , 'content_templates/kesehatan', $data);
+		$this->load->view('landing');
 	}
 }

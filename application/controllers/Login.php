@@ -30,7 +30,7 @@ class Login extends CI_Controller {
             $this->session->set_userdata('access_level',$data['level']);
             $this->session->set_userdata('ses_id',$data['username']);
             $this->session->set_userdata('ses_email',$data['email']);
-            redirect('');
+            redirect('dashboard/profil');
         }else{ //jika login sebagai mahasiswa
             $url=base_url('login');
             echo $this->session->set_flashdata('msg','Username Atau Password Salah');
@@ -41,7 +41,7 @@ class Login extends CI_Controller {
  
     function logout(){
         $this->session->sess_destroy();
-        $url=base_url('');
+        $url=base_url('dashboard/profil');
         redirect($url);
     }
 }

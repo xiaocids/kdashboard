@@ -55,9 +55,9 @@
                         <ul class="nav side-menu">
                             <li><a><i class="fa fa-line-chart"></i> Dashboard <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="<?php echo base_url() ?>">Profil</a></li>
-                                    <li><a href="<?php echo base_url('welcome/kependudukan'); ?>">Kependudukan</a></li>
-                                    <li><a href="<?php echo base_url('welcome/kesehatan') ?>">Kesehatan</a></li>
+                                    <li><a href="<?php echo base_url('dashboard/profil') ?>">Profil</a></li>
+                                    <li><a href="<?php echo base_url('dashboard/kependudukan'); ?>">Kependudukan</a></li>
+                                    <li><a href="<?php echo base_url('dashboard/kesehatan') ?>">Kesehatan</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-info-circle"></i> Informasi <span class="fa fa-chevron-down"></span></a>
@@ -71,6 +71,7 @@
                                     <li><a href="<?php echo base_url('informasi/form-dokumen')?>">Form Dokumen</a></li>
                                 </ul>
                             </li>
+                            <li><a href="<?php echo base_url('sikoma/index'); ?>"><i class="fa fa-comments"></i> SIKOMA</span></a></li>
                         </ul>
                     </div>
                     <?php if($this->session->userdata('access_level') == 1): ?>
