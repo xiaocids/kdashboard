@@ -38,7 +38,11 @@ class Migrate extends CI_Controller
             array(
                 'option_name' => 'kecamatan_id',
                 'option_value' => '1110011',
-            )
+            ),
+            array(
+                'option_name' => 'nama_kecamatan',
+                'option_value' => 'Simpang Mamplam',
+            ),
         );
 
         if(!$this->db->insert_batch($table_options, $data_options))

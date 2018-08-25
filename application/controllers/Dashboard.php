@@ -18,6 +18,10 @@ class Dashboard extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	/**
+	 * Displaying page Dashboard/Profile
+	 */
 	public function profil()
 	{
 		header("Access-Control-Allow-Origin: *");
@@ -29,6 +33,9 @@ class Dashboard extends CI_Controller {
 		$this->template->load('default_layout', 'contents' , 'content_templates/dashboard', $data);
 	}
 
+	/**
+	 * Displaying page Dashboard/Kependudukan
+	 */
 	public function kependudukan()
 	{
 		header("Access-Control-Allow-Origin: *");
@@ -40,6 +47,9 @@ class Dashboard extends CI_Controller {
 		$this->template->load('default_layout', 'contents' , 'content_templates/kependudukan', $data);
 	}
 
+	/**
+	 * Displaying page Dashboard/Kesehatan
+	 */
 	public function kesehatan()
 	{
 		header("Access-Control-Allow-Origin: *");

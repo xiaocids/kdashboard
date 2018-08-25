@@ -17,13 +17,11 @@ class Setting_options extends CI_Controller {
     }
  
     function index(){
-        $this->load->library('controller_list');
-
         header("Access-Control-Allow-Origin: *");
-        $title = 'Login';
+        $title = 'Setting';
         $data = array(
             'title' =>$title,
-            'lists' => $this->controller_list->getControllers(),
+            
         );
         $this->template->set('title', $title);
         $this->template->load('default_layout', 'contents' , 'settings/index', $data);
